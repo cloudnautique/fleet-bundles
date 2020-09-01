@@ -7,9 +7,6 @@ spec:
   - http:
       host: fleet-managed-downstream.local
       paths:
-      - path: /
-        backend:
-          service:
-            name: hello-world-svc
-            port:
-              number: 80
+      - backend:
+          serviceName: hello-world-svc
+          servicePort: 80
