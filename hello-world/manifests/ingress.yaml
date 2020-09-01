@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+spec:
+  rules:
+  - http:
+      host: fleet-managed-downstream.local
+      paths:
+      - path: /
+        backend:
+          service:
+            name: hello-world-svc
+            port:
+              number: 80
