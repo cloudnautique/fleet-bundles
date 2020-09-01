@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-world
 spec:
-  type: ClusterIp
+  type: ClusterIP
   ports:
   - port: 80
   selector:
