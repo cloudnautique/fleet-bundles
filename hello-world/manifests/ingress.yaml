@@ -1,14 +1,18 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hello-world-ing
+  namespace: cattle-resources-system
 spec:
   rules:
   - host: fleet-managed-downstream.local
-    http:
-      paths:
-      - pathType: Prefix 
-        path: "/"
-        backend:
-          serviceName: hello-world-svc
-          servicePort: 80
+      http:
+        paths:
+          - backend:
+              service:
+                name: hello-world-svc
+                port:
+                  name: hello-world-svc
+                  number: 80
+            path: "/"
+            pathType: "Prefix"
