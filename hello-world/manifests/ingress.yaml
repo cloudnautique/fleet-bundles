@@ -5,14 +5,13 @@ metadata:
   namespace: cattle-resources-system
 spec:
   rules:
-  - host: fleet-managed-downstream.local
-      http:
-        paths:
-          - backend:
-              service:
-                name: hello-world-svc
-                port:
-                  name: hello-world-svc
-                  number: 80
-            path: "/"
-            pathType: "Prefix"
+  - host: "fleet-managed-downstream.local"
+    http:
+      paths:
+      - backend:
+          service:
+            name: hello-world-svc
+            port:
+              number: 80
+        path: "/"
+        pathType: "Prefix"
