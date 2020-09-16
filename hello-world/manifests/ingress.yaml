@@ -1,17 +1,13 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: hello-world-ing
+  name: hello-world
   namespace: hello-world
 spec:
   rules:
-  - host: "fleet-managed-downstream.local"
+  - host: bill-gas-demo.eng.rancher.space
     http:
       paths:
       - backend:
-          service:
-            name: hello-world-svc
-            port:
-              number: 80
-        path: "/"
-        pathType: "Prefix"
+          serviceName: hello-world
+          servicePort: 80
