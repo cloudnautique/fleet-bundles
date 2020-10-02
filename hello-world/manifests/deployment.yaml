@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: cloudnautique/hello-world:light
+        image: cloudnautique/hello-world:dark
         resources:
           requests:
             cpu: 100m
