@@ -11,3 +11,4 @@ spec:
       - backend:
           serviceName: hello-world
           servicePort: 80
+        pathType: ImplementationSpecific
