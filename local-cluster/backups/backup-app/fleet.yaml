@@ -3,3 +3,7 @@ helm:
   releaseName: rancher-backup
   chart: rancher-backup
   repo: https://charts.rancher.io
+  values:
+    persistence:
+      enabled: true
+      storageClass: local-path
