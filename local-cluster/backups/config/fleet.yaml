@@ -1,1 +1,1 @@
-namespace: cattle-resources-system
+defaultNamespace: cattle-resources-system
