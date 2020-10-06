@@ -2,6 +2,7 @@ apiVersion: resources.cattle.io/v1
 kind: Backup
 metadata:
   name: scheduled-backups
+  namespace: cattle-resources-system
 spec:
   resourceSetName: rancher-resource-set
   retentionCount: 2
