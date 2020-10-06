@@ -1,0 +1,8 @@
+apiVersion: resources.cattle.io/v1
+kind: Backup
+metadata:
+  name: scheduled-backups
+spec:
+  resourceSetName: rancher-resource-set
+  retentionCount: 2
+  schedule: "@every 1h"
