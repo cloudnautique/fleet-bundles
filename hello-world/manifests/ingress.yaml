@@ -9,6 +9,6 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: hello-world
+          serviceName: hello-world-svc
           servicePort: 80
         pathType: ImplementationSpecific
