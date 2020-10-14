@@ -1,0 +1,14 @@
+namespace: redis-example
+helm:
+  chart: https://charts.bitnami.com/bitnami/redis-11.1.1.tgz
+  values:
+    cluster:
+      enabled: false
+    master:
+      persistence:
+      enabled: false
+    metrics:
+      enabled: true
+      serviceMonitor:
+        enabled: true
+        namespace: redis-example
