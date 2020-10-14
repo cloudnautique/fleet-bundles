@@ -5,7 +5,7 @@ metadata:
   namespace: hello-world
 spec:
   rules:
-  - host: bill-gas-demo.eng.rancher.space
+  - host: bill-helloworld.eng.rancher.space
     http:
       paths:
       - backend:
