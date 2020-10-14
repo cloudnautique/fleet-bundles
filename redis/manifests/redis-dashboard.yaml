@@ -2110,25 +2110,7 @@ data:
     }
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-08T18:35:14Z"
   labels:
     grafana_dashboard: "1"
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        .: {}
-        f:redis.json: {}
-      f:metadata:
-        f:labels:
-          .: {}
-          f:grafana_dashboard: {}
-    manager: agent
-    operation: Update
-    time: "2020-09-08T18:35:14Z"
   name: redis-dashboard
   namespace: cattle-dashboards
-  resourceVersion: "33088"
-  selfLink: /api/v1/namespaces/grafana-dashboards/configmaps/redis-dashboard
-  uid: 8d8743b3-a587-4871-a143-6200c837b04a
