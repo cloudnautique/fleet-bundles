@@ -2113,4 +2113,4 @@ metadata:
   labels:
     grafana_dashboard: "1"
   name: redis-dashboard
-  namespace: cattle-dashboards
+  namespace: redis-example
