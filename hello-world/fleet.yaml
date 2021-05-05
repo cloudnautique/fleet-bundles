@@ -1,5 +1,4 @@
 defaultNamespace: hello-world
-
 targetCustomizations:
 - name: ingress
   yaml:
@@ -11,8 +10,7 @@ targetCustomizations:
 - name: lb
   yaml:
     overlays:
-    - service-lb
+    - servicelb
   clusterSelector:
     matchLabels:
       ingress: false
-
