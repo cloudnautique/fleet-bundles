@@ -7,12 +7,12 @@ targetCustomizations:
     - ./overlays/ingress
   clusterSelector:
     matchLabels:
-      ingress: "true"
+      ingress: true
 - name: lb
   yaml:
     overlays:
     - ./overlays/service-lb
   clusterSelector:
     matchLabels:
-      ingress: "false"
+      ingress: false
 
