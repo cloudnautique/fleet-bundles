@@ -4,14 +4,14 @@ targetCustomizations:
 - name: ingress
   yaml:
     overlays:
-    - ./overlays/ingress
+    - ingress
   clusterSelector:
     matchLabels:
       ingress: true
 - name: lb
   yaml:
     overlays:
-    - ./overlays/service-lb
+    - service-lb
   clusterSelector:
     matchLabels:
       ingress: false
