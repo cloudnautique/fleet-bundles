@@ -6,11 +6,11 @@ targetCustomizations:
     overlays:
     - ./overlays/ingress
   clusterSelector:
-    ingress: "true"
+    ingress: "enabled"
 - name: lb
   yaml:
     overlays:
     - ./overlays/service-lb
   clusterSelector:
-    ingress: "false"
+    ingress: "enabled"
 
